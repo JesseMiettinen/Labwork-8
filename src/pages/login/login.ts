@@ -50,4 +50,9 @@ catch (e) {
    this.navCtrl.push('RegisterPage')
  }
  
+ 
+//Skips validation and straight to home page (for teacher just in case)
+ altlogin() {
+   this.navCtrl.push('TabsPage')
  }
+}

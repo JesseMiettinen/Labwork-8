@@ -21,7 +21,7 @@ export class RegisterPage {
     public navCtrl: NavController, public navParams: NavParams) {
   }
 
-//Registers user in firebase
+//Registers user to firebase
 
 async register(user : User) {
   try {
@@ -30,7 +30,7 @@ const result = await this.afAuth.auth.createUserWithEmailAndPassword(user.email,
     console.log(result);
     }
 
-
+//checks for errors
 catch (e) {
   console.error(e);
 }

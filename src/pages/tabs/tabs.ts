@@ -8,7 +8,7 @@ import { HomePage } from '../home/home';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 import { User } from "../../models/user";
-import { AngularFireAuth } from "angularfire2/auth";
+
 
 @IonicPage()
 @Component({
@@ -22,7 +22,7 @@ export class TabsPage {
   tab2Root = AboutPage;
   tab3Root = ContactPage;
 
-  constructor(private afAuth: AngularFireAuth, 
+  constructor(
     
     public navCtrl: NavController, public navParams: NavParams ) {
 
